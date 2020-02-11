@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="70e8a10f-51c3-446f-a49b-d1424bea1899" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XOKOS0wJ0YXCVkWxfhTYYA62AL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.16.3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../coursework2" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../coursework2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.crypto-compare-get-data.js">
+    <configuration name="crypto-compare-get-data.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/../coursework2/crypto-compare-get-data.js" working-dir="$PROJECT_DIR$/../coursework2">
+      <method v="2" />
+    </configuration>
+    <configuration name="delete.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/../coursework2/delete.js" working-dir="$PROJECT_DIR$/../coursework2">
+      <method v="2" />
+    </configuration>
+    <configuration name="get.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/../coursework2/get.js" working-dir="$PROJECT_DIR$/../coursework2">
+      <method v="2" />
+    </configuration>
+    <configuration name="myFile.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/../coursework2/myFile.js" working-dir="$PROJECT_DIR$/../coursework2">
+      <method v="2" />
+    </configuration>
+    <configuration name="query.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/../coursework2/query.js" working-dir="$PROJECT_DIR$/../coursework2">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.crypto-compare-get-data.js" />
+        <item itemvalue="Node.js.myFile.js" />
+        <item itemvalue="Node.js.get.js" />
+        <item itemvalue="Node.js.query.js" />
+        <item itemvalue="Node.js.delete.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70e8a10f-51c3-446f-a49b-d1424bea1899" name="Default Changelist" comment="" />
+      <created>1580911668530</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580911668530</updated>
+      <workItem from="1580911679254" duration="384000" />
+      <workItem from="1581332039122" duration="16000" />
+      <workItem from="1581332115817" duration="23534000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../coursework2/delete.js" />
+        <option value="$PROJECT_DIR$/../coursework2/get.js" />
+        <option value="$PROJECT_DIR$/../coursework2/get.js.map" />
+        <option value="$PROJECT_DIR$/../coursework2/query.js" />
+        <option value="$PROJECT_DIR$/../coursework2/put.js" />
+        <option value="$PROJECT_DIR$/../coursework2/query.js.map" />
+        <option value="$PROJECT_DIR$/../coursework2/put.js.map" />
+        <option value="$PROJECT_DIR$/../coursework2/delete.js.map" />
+        <option value="$PROJECT_DIR$/../coursework2/aws-settings.js" />
+        <option value="$PROJECT_DIR$/../coursework2/aws-settings.js.map" />
+        <option value="$PROJECT_DIR$/../coursework2/crypto-compare-get-data.js" />
+        <option value="$PROJECT_DIR$/../coursework2/crypto-compare-get-data.js.map" />
+        <option value="$PROJECT_DIR$/../coursework2/CryptoInterface.js" />
+        <option value="$PROJECT_DIR$/../coursework2/CryptoInterface.js.map" />
+      </list>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="85" y="100" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581341622150">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="85" y="100" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.777@0.23.1280.777" timestamp="1581341622150" />
+    <state x="349" y="221" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581417490082">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="349" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.777@0.23.1280.777" timestamp="1581417490082" />
+    <state x="395" y="92" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581428037834">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="395" y="92" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.777@0.23.1280.777" timestamp="1581428037834" />
+    <state width="1259" height="197" key="GridCell.Tab.0.bottom" timestamp="1581427442436">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1259" height="197" key="GridCell.Tab.0.bottom/0.23.1280.777/-362.-1057.1920.1057@0.23.1280.777" timestamp="1581015937016" />
+    <state width="1259" height="197" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1581427442436" />
+    <state width="1259" height="197" key="GridCell.Tab.0.center" timestamp="1581427442435">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1259" height="197" key="GridCell.Tab.0.center/0.23.1280.777/-362.-1057.1920.1057@0.23.1280.777" timestamp="1581015937015" />
+    <state width="1259" height="197" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1581427442435" />
+    <state width="1259" height="197" key="GridCell.Tab.0.left" timestamp="1581427442435">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1259" height="197" key="GridCell.Tab.0.left/0.23.1280.777/-362.-1057.1920.1057@0.23.1280.777" timestamp="1581015937013" />
+    <state width="1259" height="197" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1581427442435" />
+    <state width="1259" height="197" key="GridCell.Tab.0.right" timestamp="1581427442436">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1259" height="197" key="GridCell.Tab.0.right/0.23.1280.777/-362.-1057.1920.1057@0.23.1280.777" timestamp="1581015937016" />
+    <state width="1259" height="197" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1581427442436" />
+    <state x="141" y="50" key="SettingsEditor" timestamp="1581344130414">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="141" y="50" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1581344130414" />
+    <state x="298" y="47" width="837" height="729" key="find.popup" timestamp="1581340330026">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="298" y="47" width="837" height="729" key="find.popup/0.23.1280.777@0.23.1280.777" timestamp="1581340330026" />
+  </component>
+</project>

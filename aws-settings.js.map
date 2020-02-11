@@ -1,0 +1,1 @@
+{"version":3,"file":"aws-settings.js","sourceRoot":"","sources":["aws-settings.ts"],"names":[],"mappings":";;AAAA,IAAI,GAAG,GAAG,OAAO,CAAC,SAAS,CAAC,CAAC;AAE7B,GAAG,CAAC,MAAM,CAAC,MAAM,CAAC;IACd,MAAM,EAAE,WAAW;IACnB,QAAQ,EAAE,0CAA0C;CACvD,CAAC,CAAC;AAEH,2BAA2B;AAChB,QAAA,cAAc,GAAG,IAAI,GAAG,CAAC,QAAQ,CAAC,cAAc,EAAE,CAAC"}
