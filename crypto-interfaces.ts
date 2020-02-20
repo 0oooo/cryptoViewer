@@ -2,10 +2,12 @@ export interface DownloadedCryptoObject {
     Response: string,
     Message?: string,
     HasWarning: boolean,
-    Data: [{
-            time: number,
-            close: number
-        }]
+    Data: Array<CryptoPrice>
+}
+
+export interface CryptoPrice {
+    time: number,
+    close: number
 }
 
 

@@ -98,7 +98,7 @@ var getPricesForAllCurrencies = function () { return __awaiter(void 0, void 0, v
             case 5:
                 if (!(_f < listOfPrices_1.length)) return [3 /*break*/, 8];
                 price = listOfPrices_1[_f];
-                return [4 /*yield*/, put_1.addTransactionToDatabase(price["time"], coin, price["close"])];
+                return [4 /*yield*/, put_1.addTransactionToDatabase(price.time, coin, price.close)];
             case 6:
                 _g.sent();
                 _g.label = 7;

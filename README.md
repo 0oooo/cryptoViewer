@@ -8,6 +8,14 @@ npm install
 ```
 
 
+## Dependencies
+
+```
+npm install axios
+npm install dotenv
+npm install twitter
+```
+
 ## Environment settings
 
 ```

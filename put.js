@@ -37,10 +37,11 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var aws_settings_1 = require("./aws-settings");
-var TABLE = "crypto";
-var putParameters = function (timestamp, currency, price) {
+var CRYPTO_TABLE = "crypto";
+var TWEET_TABLE = "twitter";
+var putCryptoParameters = function (timestamp, currency, price) {
     return {
-        TableName: TABLE,
+        TableName: CRYPTO_TABLE,
         Item: {
             TimeTransaction: timestamp,
             CurrencyName: currency,
@@ -51,7 +52,7 @@ var putParameters = function (timestamp, currency, price) {
 exports.addTransactionToDatabase = function (timestamp, currency, price) { return __awaiter(void 0, void 0, void 0, function () {
     var params;
     return __generator(this, function (_a) {
-        params = putParameters(timestamp, currency, price);
+        params = putCryptoParameters(timestamp, currency, price);
         //Store data in DynamoDB and handle errors
         aws_settings_1.documentClient.put(params, function (err, data) {
             if (err) {
@@ -60,6 +61,34 @@ exports.addTransactionToDatabase = function (timestamp, currency, price) { retur
             }
             else {
                 console.log("Currency added to table:", params.Item);
+            }
+        });
+        return [2 /*return*/];
+    });
+}); };
+var putTweeterParameters = function (id, createdDate, keyword, tweet) {
+    return {
+        TableName: TWEET_TABLE,
+        Item: {
+            id: id,
+            creationDate: createdDate,
+            keyword: keyword,
+            tweet: tweet
+        }
+    };
+};
+exports.addTweetToDatabase = function (id, createdDate, keyword, tweet) { return __awaiter(void 0, void 0, void 0, function () {
+    var params;
+    return __generator(this, function (_a) {
+        params = putTweeterParameters(id, createdDate, keyword, tweet);
+        //Store data in DynamoDB and handle errors
+        aws_settings_1.documentClient.put(params, function (err, data) {
+            if (err) {
+                console.error("Unable to add tweet ", params.Item.tweet);
+                console.error("Error JSON:", JSON.stringify(err));
+            }
+            else {
+                console.log("Tweet added to table:", params.Item);
             }
         });
         return [2 /*return*/];
