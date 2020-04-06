@@ -1,3 +1,6 @@
+/**
+ * AWS setting to connect to dynamo db. Export documentClient
+ */
 let AWS = require("aws-sdk");
 
 AWS.config.update({

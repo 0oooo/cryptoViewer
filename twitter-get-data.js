@@ -40,13 +40,16 @@ var put_1 = require("./put");
 var dotenv = require('dotenv');
 var Twitter = require('twitter');
 dotenv.config();
+// Twitter API
 var client = new Twitter({
     consumer_key: process.env.TWITTER_API_KEY,
     consumer_secret: process.env.TWITTER_API_SECRET_KEY,
     access_token_key: process.env.TWITTER_ACCESS_TOKEN,
     access_token_secret: process.env.TWITTER_SECRET_ACCESS_TOKEN
 });
-//Downloads and outputs tweet text
+// List of currency to search in twitter
+var keywords = ["bitcoin", "litecoin", "ethereum", "monero", "tron"];
+//Search tweet by keyword (the currency) and put them in the tweitter database.
 function searchTweets(keyword) {
     return __awaiter(this, void 0, void 0, function () {
         var searchParams, result, tweets, error_1;
@@ -56,7 +59,7 @@ function searchTweets(keyword) {
                     _a.trys.push([0, 2, , 3]);
                     searchParams = {
                         q: keyword,
-                        count: 3,
+                        count: 120,
                         lang: "en"
                     };
                     return [4 /*yield*/, client.get('search/tweets', searchParams)];
@@ -84,8 +87,8 @@ function searchTweets(keyword) {
         });
     });
 }
-var keywords = ["bitcoin", "litecoin", "ethereum", "monero", "tron"];
-var searchAllCurrencies = function () { return __awaiter(void 0, void 0, void 0, function () {
+// Search tweet for all currencies
+exports.searchTweetsForAllCurrencies = function () { return __awaiter(void 0, void 0, void 0, function () {
     var _i, keywords_1, keyword;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -109,19 +112,4 @@ var searchAllCurrencies = function () { return __awaiter(void 0, void 0, void 0,
         }
     });
 }); };
-// //PromiseAll version
-// let searchAllCurrencies = async () => {
-//     //Array to hold promises
-//     let promiseArray: Array<Promise<void>> = [];
-//
-//     for (const keyword of keywords) {
-//         promiseArray.push(searchTweets(keyword));
-//         // await searchTweets(keyword);
-//     }
-//
-//
-//     let databaseResult: Array<void> = await Promise.all(promiseArray);
-//     console.log("Database result: " + JSON.stringify(databaseResult));
-// }
-searchAllCurrencies();
 //# sourceMappingURL=twitter-get-data.js.map

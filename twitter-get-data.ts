@@ -4,6 +4,7 @@ const dotenv = require('dotenv');
 const Twitter = require('twitter');
 dotenv.config();
 
+// Twitter API
 let client = new Twitter({
     consumer_key: process.env.TWITTER_API_KEY,
     consumer_secret: process.env.TWITTER_API_SECRET_KEY,
@@ -11,13 +12,16 @@ let client = new Twitter({
     access_token_secret: process.env.TWITTER_SECRET_ACCESS_TOKEN
 });
 
-//Downloads and outputs tweet text
+// List of currency to search in twitter
+const keywords : Array<string>  = ["bitcoin", "litecoin", "ethereum", "monero", "tron"];
+
+//Search tweet by keyword (the currency) and put them in the tweitter database.
 async function searchTweets(keyword: string){
     try{
         //Set up parameters for the search
         let searchParams = {
             q: keyword,
-            count: 3,
+            count: 120,
             lang: "en"
         };
 
@@ -44,9 +48,8 @@ async function searchTweets(keyword: string){
     }
 }
 
-const keywords : Array<string>  = ["bitcoin", "litecoin", "ethereum", "monero", "tron"];
-
-let searchAllCurrencies = async () => {
+// Search tweet for all currencies
+export let searchTweetsForAllCurrencies = async () => {
     console.log("search all");
     for (const keyword of keywords) {
         // console.log(keyword);
@@ -54,20 +57,3 @@ let searchAllCurrencies = async () => {
     }
 }
 
-// //PromiseAll version
-// let searchAllCurrencies = async () => {
-//     //Array to hold promises
-//     let promiseArray: Array<Promise<void>> = [];
-//
-//     for (const keyword of keywords) {
-//         promiseArray.push(searchTweets(keyword));
-//         // await searchTweets(keyword);
-//     }
-//
-//
-//     let databaseResult: Array<void> = await Promise.all(promiseArray);
-//     console.log("Database result: " + JSON.stringify(databaseResult));
-// }
-
-
-searchAllCurrencies();

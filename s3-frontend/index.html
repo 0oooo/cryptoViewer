@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>CryptoViewerss</title>
+  <!-- Include Plotly JavaScript library -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div id="title">
+      <div>
+        Crypto Viewer
+      </div>
+      <div>
+        The best tool to visualise your favorite cryptocurrencies
+      </div>
+    </div>
+  </div>
+
+  <div id="emotion-legend">
+    <div class="emotion" id="emotion-label">
+      Last hour buyers sentiments</br>
+    </div>
+    <div class="emotion" id="emotion-chart">
+      <img src="emotion_chart.png" />
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <div class="currency">
+      <div class="currency-header">
+        <img src="bitcoin.png" /><label>Bitcoin:</label>
+        <div id="bitcoin-latest-price"></div>
+      </div>
+      <div class="currency-body">
+        <div class="graph" id="bitcoin-graph">
+
+        </div>
+      </div>
+      <div class="trading-date"></div>
+    </div>
+
+    <div class="currency">
+      <div class="currency-header">
+        <img src="ethereum.png" /><label>Ethereum:</label>
+        <div id="ethereum-latest-price"></div>
+      </div>
+      <div class="currency-body">
+        <div class="graph" id="ethereum-graph">
+
+        </div>
+      </div>
+      <div class="trading-date"></div>
+    </div>
+
+    <div class="currency">
+      <div class="currency-header">
+        <img src="litecoin.png" /><label>Litecoin:</label>
+        <div id="litecoin-latest-price"></div>
+      </div>
+      <div class="currency-body">
+        <div class="graph" id="litecoin-graph">
+
+        </div>
+      </div>
+      <div class="trading-date"></div>
+    </div>
+
+    <div class="currency">
+      <div class="currency-header">
+        <img src="monero.png" /><label>Monero:</label>
+        <div id="monero-latest-price"></div>
+      </div>
+      <div class="currency-body">
+        <div class="graph" id="monero-graph">
+
+        </div>
+      </div>
+      <div class="trading-date"></div>
+    </div>
+
+    <div class="currency">
+      <div class="currency-header">
+        <img src="ton.png" /><label>Tron:</label>
+        <div id="tron-latest-price"></div>
+      </div>
+      <div class="currency-body">
+        <div class="graph" id="tron-graph">
+
+        </div>
+      </div>
+      <div class="trading-date"></div>
+    </div>
+
+  </div>
+
+
+
+  <script>
+    //Open connection
+    let connection = new WebSocket("wss://k0caafmtbf.execute-api.us-east-1.amazonaws.com/dev");
+
+    let requestData = () => {
+      let msgObject = {
+        action: "requestData"
+      };
+
+      console.log("We are sending: ", JSON.stringify(msgObject));
+      //Send message object
+      connection.send(JSON.stringify(msgObject));
+
+      //Log result
+      console.log("Request sent.");
+    }
+
+    connection.onopen = function(event) {
+      console.log("Connected: " + JSON.stringify(event));
+      requestData();
+    };
+
+    function monthIs(monthInt) {
+      switch (monthInt) {
+        case 0:
+          return "January";
+        case 1:
+          return "February";
+        case 2:
+          return "March";
+        case 3:
+          return "April";
+        case 4:
+          return "May";
+        case 5:
+          return "June";
+        case 6:
+          return "July";
+        case 7:
+          return "August";
+        case 8:
+          return "September";
+        case 9:
+          return "October";
+        case 10:
+          return "November";
+        case 11:
+          return "December";
+        default:
+          return "unknown"
+      }
+    }
+
+    function fillDate() {
+      let now = new Date();
+      let day = now.getDate();
+      let month = now.getMonth();
+      let year = now.getFullYear();
+
+      let currDate = day + " " + monthIs(month) + " " + year;
+      let listOfDateToBeFilled = document.getElementsByClassName("trading-date");
+      for (i = 0; i < listOfDateToBeFilled.length; i++) {
+        listOfDateToBeFilled[i].innerHTML = currDate;
+      }
+    }
+
+    window.onload = function() {
+      fillDate();
+    };
+
+    //Output messages from the server
+    connection.onmessage = function(msg) {
+      console.log("Received new element.");
+      let data = JSON.parse(msg.data);
+      if (data.type == "numerical-data") {
+        drawGraph(data);
+      } else if (data.type == "sentiment-data") {
+        console.log("sentiment data = ", data);
+        addColorFromSentiment(data);
+      }
+    }
+
+    const sentiments = ["positive", "negative", "neutral", "mixed"];
+
+    let chooseBetweenEqualsSentiment = (listOfSentiment) => {
+      if (listOfSentiment.length > 2) {
+        return "mixed";
+      }
+
+      if (listOfSentiment[0] == "positive" && listOfSentiment[1] == "negative") {
+        return "mixed";
+      }
+
+      return listOfSentiment[0];
+    }
+
+    let getMainSentiment = (currencySentiments) => {
+      let mainSentiment = "";
+      let highestSentimentValue = 0;
+      let equalSentiments = [];
+
+
+      sentiments.forEach(sentiment => {
+        if (currencySentiments[sentiment] > highestSentimentValue) {
+          if (equalSentiments.length > 0) {
+            equalSentiments = [];
+          }
+          mainSentiment = sentiment;
+          highestSentimentValue = currencySentiments[sentiment];
+        } else if (currencySentiments[sentiment] == highestSentimentValue && highestSentimentValue > 0) {
+          equalSentiments.push(mainSentiment);
+          equalSentiments.push(sentiment);
+        }
+      });
+
+      if (equalSentiments.length > 0) {
+        return chooseBetweenEqualsSentiment(equalSentiments);
+      } else if (highestSentimentValue == 0) {
+        return "neutral";
+      } else {
+        return mainSentiment;
+      }
+    }
+
+    let sentimentToColor = {
+      "positive": "#E7FEDA",
+      "negative": "#FFEDDA",
+      "neutral": "#E7E7E7",
+      "mixed": "linear-gradient(to right, #E7FEDA , #FFEDDA)"
+    }
+
+    let addColorFromSentiment = (dataForSentiment) => {
+      for (let coin in coins) {
+        let key = coins[coin];
+        if (key == "type") {
+          break;
+        }
+
+        let sentimentForCurrency = dataForSentiment[key];
+        console.log(`currency = ${key}`);
+        console.log(`sentimentForCurrency = ${JSON.stringify(sentimentForCurrency)}`);
+        let mainSentiment = getMainSentiment(sentimentForCurrency);
+        console.log(`main sentiment for ${key} is ${mainSentiment}`);
+
+        let chartDiv = document.getElementById(key + "-graph");
+        console.log(`chartDiv = ${chartDiv}`);
+
+        chartDiv.style.background = sentimentToColor[mainSentiment];
+      }
+    }
+
+
+    const coins = ["bitcoin", "ethereum", "litecoin", "monero", "tron"];
+
+    let drawGraph = (dataForGraph) => {
+      for (let coin in coins) {
+        let key = coins[coin];
+        if (key == "type") {
+          break;
+        }
+        let data = [dataForGraph[key]];
+
+        //Get reference to Div where chart will be drawn
+        let chartDiv = document.getElementById(key + "-graph");
+
+        //Set up graph
+        let layout = {
+          xaxis: {
+            title: 'Time'
+          },
+          yaxis: {
+            title: 'Price USD'
+          }
+        };
+
+        //Plot data
+        Plotly.newPlot(chartDiv, data, layout);
+      }
+    }
+
+    //Log errors
+    connection.onerror = function(error) {
+      console.log("WebSocket Error: " + JSON.stringify(error));
+    }
+  </script>
+</body>
+
+</html>

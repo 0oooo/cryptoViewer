@@ -1,64 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70e8a10f-51c3-446f-a49b-d1424bea1899" name="Default Changelist" comment="" />
+    <list default="true" id="70e8a10f-51c3-446f-a49b-d1424bea1899" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lambdaFunctions/displaySyntheticData" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lambdaFunctions/predictCryptoData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lambdaFunctions/predictSyntheticData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lambdaFunctions/sentimentAnalysis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lambdaFunctions/wsConnect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lambdaFunctions/wsDefault.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lambdaFunctions/wsDisconnect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lambdaFunctions/wsSendAllData/database.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lambdaFunctions/wsSendAllData/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lambdaFunctions/wsSendAllData/websocket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machineLearning/getLastCryptoDataForML.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machineLearning/predictCryptoData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run-all-queries.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s3-frontend/bitcoin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s3-frontend/cryptocurrencies.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s3-frontend/emotion_chart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s3-frontend/ethereum.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s3-frontend/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s3-frontend/litecoin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s3-frontend/monero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s3-frontend/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s3-frontend/ton.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aws-settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/aws-settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aws-settings.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/aws-settings.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aws-settings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/aws-settings.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto-compare-get-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/crypto-compare-get-data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto-compare-get-data.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/crypto-compare-get-data.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto-compare-get-data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/crypto-compare-get-data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delete.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/delete.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/delete.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/get.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/get.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/get.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myFile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myFile.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myFile.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-get-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/twitter-get-data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-get-data.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/twitter-get-data.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter-get-data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/twitter-get-data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/error.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="coursework2" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="tsconfig.json" />
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XOKOS0wJ0YXCVkWxfhTYYA62AL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.3" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../coursework2" />
+    <property name="js.last.introduce.type" value="LET" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lambdaFunctions/wsSendAllData" />
+      <recent name="$PROJECT_DIR$/machineLearning" />
+      <recent name="$PROJECT_DIR$/thinktank" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../coursework2" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.twitter-get-data.js">
-    <configuration name="crypto-compare-get-data.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/../coursework2/crypto-compare-get-data.js" working-dir="$PROJECT_DIR$/../coursework2">
+  <component name="RunManager" selected="Node.js.run-all-queries.js">
+    <configuration name="crypto-compare-get-data.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/crypto-compare-get-data.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="get.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/../coursework2/get.js" working-dir="$PROJECT_DIR$/../coursework2">
+    <configuration name="getLastCryptoDataForML.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/machineLearning/getLastCryptoDataForML.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="myFile.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/../coursework2/myFile.js" working-dir="$PROJECT_DIR$/../coursework2">
+    <configuration name="getPredictions.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/thinktank/getPredictions.js" working-dir="$PROJECT_DIR$/thinktank">
       <method v="2" />
     </configuration>
-    <configuration name="query.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/../coursework2/query.js" working-dir="$PROJECT_DIR$/../coursework2">
+    <configuration name="predictCryptoData.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/machineLearning/predictCryptoData.js" working-dir="$PROJECT_DIR$/machineLearning">
       <method v="2" />
     </configuration>
-    <configuration name="twitter-get-data.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/../coursework2/twitter-get-data.js" working-dir="$PROJECT_DIR$/../coursework2">
+    <configuration name="run-all-queries.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/run-all-queries.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Node.js.bin/www" />
+      <item itemvalue="Node.js.crypto-compare-get-data.js" />
+      <item itemvalue="Node.js.run-all-queries.js" />
+      <item itemvalue="Node.js.getPredictions.js" />
+      <item itemvalue="Node.js.getLastCryptoDataForML.js" />
+      <item itemvalue="Node.js.predictCryptoData.js" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.twitter-get-data.js" />
+        <item itemvalue="Node.js.run-all-queries.js" />
+        <item itemvalue="Node.js.predictCryptoData.js" />
+        <item itemvalue="Node.js.getPredictions.js" />
+        <item itemvalue="Node.js.getLastCryptoDataForML.js" />
         <item itemvalue="Node.js.crypto-compare-get-data.js" />
-        <item itemvalue="Node.js.myFile.js" />
-        <item itemvalue="Node.js.get.js" />
-        <item itemvalue="Node.js.query.js" />
       </list>
     </recent_temporary>
   </component>
@@ -87,6 +160,16 @@
       <workItem from="1580911679254" duration="384000" />
       <workItem from="1581332039122" duration="16000" />
       <workItem from="1581332115817" duration="29668000" />
+      <workItem from="1582717787000" duration="113000" />
+      <workItem from="1582719931175" duration="1986000" />
+      <workItem from="1583599471865" duration="6746000" />
+      <workItem from="1584003256030" duration="1928000" />
+      <workItem from="1584527426116" duration="3872000" />
+      <workItem from="1584694564177" duration="8547000" />
+      <workItem from="1585514010548" duration="1867000" />
+      <workItem from="1585569651694" duration="17318000" />
+      <workItem from="1585745073629" duration="15000" />
+      <workItem from="1585756129867" duration="16190000" />
     </task>
     <servers />
   </component>
@@ -94,115 +177,166 @@
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../coursework2/delete.js" />
-        <option value="$PROJECT_DIR$/../coursework2/get.js" />
-        <option value="$PROJECT_DIR$/../coursework2/get.js.map" />
-        <option value="$PROJECT_DIR$/../coursework2/query.js" />
-        <option value="$PROJECT_DIR$/../coursework2/put.js" />
-        <option value="$PROJECT_DIR$/../coursework2/query.js.map" />
-        <option value="$PROJECT_DIR$/../coursework2/put.js.map" />
-        <option value="$PROJECT_DIR$/../coursework2/delete.js.map" />
-        <option value="$PROJECT_DIR$/../coursework2/aws-settings.js" />
-        <option value="$PROJECT_DIR$/../coursework2/aws-settings.js.map" />
-        <option value="$PROJECT_DIR$/../coursework2/crypto-compare-get-data.js" />
-        <option value="$PROJECT_DIR$/../coursework2/crypto-compare-get-data.js.map" />
-        <option value="$PROJECT_DIR$/../coursework2/CryptoInterface.js" />
-        <option value="$PROJECT_DIR$/../coursework2/CryptoInterface.js.map" />
-        <option value="$PROJECT_DIR$/../coursework2/twitter-get-data.js.map" />
-        <option value="$PROJECT_DIR$/../coursework2/twitter-get-data.js" />
-        <option value="$PROJECT_DIR$/../coursework2/twitter-interface.js" />
-        <option value="$PROJECT_DIR$/../coursework2/twitter-interface.js.map" />
+        <option value="$PROJECT_DIR$/crypto-compare-get-data.js" />
+        <option value="$PROJECT_DIR$/aws-settings.js.map" />
+        <option value="$PROJECT_DIR$/query.js.map" />
+        <option value="$PROJECT_DIR$/put.js" />
+        <option value="$PROJECT_DIR$/aws-settings.js" />
+        <option value="$PROJECT_DIR$/twitter-get-data.js.map" />
+        <option value="$PROJECT_DIR$/put.js.map" />
+        <option value="$PROJECT_DIR$/crypto-compare-get-data.js.map" />
+        <option value="$PROJECT_DIR$/twitter-get-data.js" />
+        <option value="$PROJECT_DIR$/query.js" />
+        <option value="$PROJECT_DIR$/twitter-interface.js" />
+        <option value="$PROJECT_DIR$/twitter-interface.js.map" />
+        <option value="$PROJECT_DIR$/run-all-queries.js.map" />
+        <option value="$PROJECT_DIR$/run-all-queries.js" />
       </list>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="85" y="100" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581341622150">
+    <state x="85" y="100" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585515158685">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
+    <state x="85" y="100" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.777/1280.-393.1920.1057@0.23.1280.777" timestamp="1585515158685" />
     <state x="85" y="100" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.777@0.23.1280.777" timestamp="1581341622150" />
-    <state x="349" y="221" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581417490082">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state x="1804" y="-124" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585819554207">
+      <screen x="1280" y="-393" width="1920" height="1057" />
     </state>
+    <state x="349" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.777/1280.-393.1920.1057@0.23.1280.777" timestamp="1584527476654" />
+    <state x="1804" y="-124" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.777/1280.-393.1920.1057@1280.-393.1920.1057" timestamp="1585819554207" />
     <state x="349" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.777@0.23.1280.777" timestamp="1581417490082" />
     <state x="395" y="92" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581428037834">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="395" y="92" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.777@0.23.1280.777" timestamp="1581428037834" />
-    <state width="1259" height="245" key="GridCell.Tab.0.bottom" timestamp="1581514794360">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1899" height="356" key="GridCell.Tab.0.bottom" timestamp="1585838786803">
+      <screen x="1280" y="-393" width="1920" height="1057" />
     </state>
+    <state width="1259" height="197" key="GridCell.Tab.0.bottom/0.23.1280.777/-230.-1027.1680.1027@0.23.1280.777" timestamp="1584015873623" />
     <state width="1259" height="197" key="GridCell.Tab.0.bottom/0.23.1280.777/-362.-1057.1920.1057@0.23.1280.777" timestamp="1581015937016" />
-    <state width="1259" height="245" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1581514794360" />
-    <state width="1259" height="245" key="GridCell.Tab.0.center" timestamp="1581514794359">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1259" height="197" key="GridCell.Tab.0.bottom/0.23.1280.777/-573.-1057.1920.1057@0.23.1280.777" timestamp="1584141129698" />
+    <state width="1259" height="446" key="GridCell.Tab.0.bottom/0.23.1280.777/1280.-393.1920.1057@0.23.1280.777" timestamp="1585650429429" />
+    <state width="1899" height="356" key="GridCell.Tab.0.bottom/0.23.1280.777/1280.-393.1920.1057@1280.-393.1920.1057" timestamp="1585838786803" />
+    <state width="1259" height="255" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1585828433050" />
+    <state width="1899" height="356" key="GridCell.Tab.0.center" timestamp="1585838786799">
+      <screen x="1280" y="-393" width="1920" height="1057" />
     </state>
+    <state width="1259" height="197" key="GridCell.Tab.0.center/0.23.1280.777/-230.-1027.1680.1027@0.23.1280.777" timestamp="1584015873621" />
     <state width="1259" height="197" key="GridCell.Tab.0.center/0.23.1280.777/-362.-1057.1920.1057@0.23.1280.777" timestamp="1581015937015" />
-    <state width="1259" height="245" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1581514794359" />
-    <state width="1259" height="245" key="GridCell.Tab.0.left" timestamp="1581514794359">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1259" height="197" key="GridCell.Tab.0.center/0.23.1280.777/-573.-1057.1920.1057@0.23.1280.777" timestamp="1584141129697" />
+    <state width="1259" height="446" key="GridCell.Tab.0.center/0.23.1280.777/1280.-393.1920.1057@0.23.1280.777" timestamp="1585650429428" />
+    <state width="1899" height="356" key="GridCell.Tab.0.center/0.23.1280.777/1280.-393.1920.1057@1280.-393.1920.1057" timestamp="1585838786799" />
+    <state width="1259" height="255" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1585828433047" />
+    <state width="1899" height="356" key="GridCell.Tab.0.left" timestamp="1585838786795">
+      <screen x="1280" y="-393" width="1920" height="1057" />
     </state>
+    <state width="1259" height="197" key="GridCell.Tab.0.left/0.23.1280.777/-230.-1027.1680.1027@0.23.1280.777" timestamp="1584015873620" />
     <state width="1259" height="197" key="GridCell.Tab.0.left/0.23.1280.777/-362.-1057.1920.1057@0.23.1280.777" timestamp="1581015937013" />
-    <state width="1259" height="245" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1581514794359" />
-    <state width="1259" height="245" key="GridCell.Tab.0.right" timestamp="1581514794359">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1259" height="197" key="GridCell.Tab.0.left/0.23.1280.777/-573.-1057.1920.1057@0.23.1280.777" timestamp="1584141129696" />
+    <state width="1259" height="446" key="GridCell.Tab.0.left/0.23.1280.777/1280.-393.1920.1057@0.23.1280.777" timestamp="1585650429427" />
+    <state width="1899" height="356" key="GridCell.Tab.0.left/0.23.1280.777/1280.-393.1920.1057@1280.-393.1920.1057" timestamp="1585838786795" />
+    <state width="1259" height="255" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1585828433046" />
+    <state width="1899" height="356" key="GridCell.Tab.0.right" timestamp="1585838786802">
+      <screen x="1280" y="-393" width="1920" height="1057" />
     </state>
+    <state width="1259" height="197" key="GridCell.Tab.0.right/0.23.1280.777/-230.-1027.1680.1027@0.23.1280.777" timestamp="1584015873623" />
     <state width="1259" height="197" key="GridCell.Tab.0.right/0.23.1280.777/-362.-1057.1920.1057@0.23.1280.777" timestamp="1581015937016" />
-    <state width="1259" height="245" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1581514794359" />
-    <state width="1259" height="245" key="GridCell.Tab.1.bottom" timestamp="1581514794363">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1259" height="197" key="GridCell.Tab.0.right/0.23.1280.777/-573.-1057.1920.1057@0.23.1280.777" timestamp="1584141129697" />
+    <state width="1259" height="446" key="GridCell.Tab.0.right/0.23.1280.777/1280.-393.1920.1057@0.23.1280.777" timestamp="1585650429429" />
+    <state width="1899" height="356" key="GridCell.Tab.0.right/0.23.1280.777/1280.-393.1920.1057@1280.-393.1920.1057" timestamp="1585838786802" />
+    <state width="1259" height="255" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1585828433048" />
+    <state width="1899" height="356" key="GridCell.Tab.1.bottom" timestamp="1585838786811">
+      <screen x="1280" y="-393" width="1920" height="1057" />
     </state>
+    <state width="1899" height="356" key="GridCell.Tab.1.bottom/0.23.1280.777/1280.-393.1920.1057@1280.-393.1920.1057" timestamp="1585838786811" />
     <state width="1259" height="245" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1581514794363" />
-    <state width="1259" height="245" key="GridCell.Tab.1.center" timestamp="1581514794361">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1899" height="356" key="GridCell.Tab.1.center" timestamp="1585838786808">
+      <screen x="1280" y="-393" width="1920" height="1057" />
     </state>
+    <state width="1899" height="356" key="GridCell.Tab.1.center/0.23.1280.777/1280.-393.1920.1057@1280.-393.1920.1057" timestamp="1585838786808" />
     <state width="1259" height="245" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1581514794361" />
-    <state width="1259" height="245" key="GridCell.Tab.1.left" timestamp="1581514794361">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1899" height="356" key="GridCell.Tab.1.left" timestamp="1585838786804">
+      <screen x="1280" y="-393" width="1920" height="1057" />
     </state>
+    <state width="1899" height="356" key="GridCell.Tab.1.left/0.23.1280.777/1280.-393.1920.1057@1280.-393.1920.1057" timestamp="1585838786804" />
     <state width="1259" height="245" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1581514794360" />
-    <state width="1259" height="245" key="GridCell.Tab.1.right" timestamp="1581514794361">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1899" height="356" key="GridCell.Tab.1.right" timestamp="1585838786809">
+      <screen x="1280" y="-393" width="1920" height="1057" />
     </state>
+    <state width="1899" height="356" key="GridCell.Tab.1.right/0.23.1280.777/1280.-393.1920.1057@1280.-393.1920.1057" timestamp="1585838786809" />
     <state width="1259" height="245" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1581514794361" />
-    <state width="1259" height="245" key="GridCell.Tab.2.bottom" timestamp="1581514794364">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1899" height="356" key="GridCell.Tab.2.bottom" timestamp="1585838786816">
+      <screen x="1280" y="-393" width="1920" height="1057" />
     </state>
+    <state width="1899" height="356" key="GridCell.Tab.2.bottom/0.23.1280.777/1280.-393.1920.1057@1280.-393.1920.1057" timestamp="1585838786816" />
     <state width="1259" height="245" key="GridCell.Tab.2.bottom/0.23.1280.777@0.23.1280.777" timestamp="1581514794364" />
-    <state width="1259" height="245" key="GridCell.Tab.2.center" timestamp="1581514794364">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1899" height="356" key="GridCell.Tab.2.center" timestamp="1585838786812">
+      <screen x="1280" y="-393" width="1920" height="1057" />
     </state>
+    <state width="1899" height="356" key="GridCell.Tab.2.center/0.23.1280.777/1280.-393.1920.1057@1280.-393.1920.1057" timestamp="1585838786812" />
     <state width="1259" height="245" key="GridCell.Tab.2.center/0.23.1280.777@0.23.1280.777" timestamp="1581514794364" />
-    <state width="1259" height="245" key="GridCell.Tab.2.left" timestamp="1581514794363">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1899" height="356" key="GridCell.Tab.2.left" timestamp="1585838786812">
+      <screen x="1280" y="-393" width="1920" height="1057" />
     </state>
+    <state width="1899" height="356" key="GridCell.Tab.2.left/0.23.1280.777/1280.-393.1920.1057@1280.-393.1920.1057" timestamp="1585838786812" />
     <state width="1259" height="245" key="GridCell.Tab.2.left/0.23.1280.777@0.23.1280.777" timestamp="1581514794363" />
-    <state width="1259" height="245" key="GridCell.Tab.2.right" timestamp="1581514794364">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1899" height="356" key="GridCell.Tab.2.right" timestamp="1585838786813">
+      <screen x="1280" y="-393" width="1920" height="1057" />
     </state>
+    <state width="1899" height="356" key="GridCell.Tab.2.right/0.23.1280.777/1280.-393.1920.1057@1280.-393.1920.1057" timestamp="1585838786813" />
     <state width="1259" height="245" key="GridCell.Tab.2.right/0.23.1280.777@0.23.1280.777" timestamp="1581514794364" />
-    <state width="1259" height="245" key="GridCell.Tab.3.bottom" timestamp="1581514794366">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1899" height="356" key="GridCell.Tab.3.bottom" timestamp="1585838786820">
+      <screen x="1280" y="-393" width="1920" height="1057" />
     </state>
+    <state width="1899" height="356" key="GridCell.Tab.3.bottom/0.23.1280.777/1280.-393.1920.1057@1280.-393.1920.1057" timestamp="1585838786820" />
     <state width="1259" height="245" key="GridCell.Tab.3.bottom/0.23.1280.777@0.23.1280.777" timestamp="1581514794366" />
-    <state width="1259" height="245" key="GridCell.Tab.3.center" timestamp="1581514794365">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1899" height="356" key="GridCell.Tab.3.center" timestamp="1585838786819">
+      <screen x="1280" y="-393" width="1920" height="1057" />
     </state>
+    <state width="1899" height="356" key="GridCell.Tab.3.center/0.23.1280.777/1280.-393.1920.1057@1280.-393.1920.1057" timestamp="1585838786819" />
     <state width="1259" height="245" key="GridCell.Tab.3.center/0.23.1280.777@0.23.1280.777" timestamp="1581514794365" />
-    <state width="1259" height="245" key="GridCell.Tab.3.left" timestamp="1581514794365">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1899" height="356" key="GridCell.Tab.3.left" timestamp="1585838786818">
+      <screen x="1280" y="-393" width="1920" height="1057" />
     </state>
+    <state width="1899" height="356" key="GridCell.Tab.3.left/0.23.1280.777/1280.-393.1920.1057@1280.-393.1920.1057" timestamp="1585838786818" />
     <state width="1259" height="245" key="GridCell.Tab.3.left/0.23.1280.777@0.23.1280.777" timestamp="1581514794365" />
-    <state width="1259" height="245" key="GridCell.Tab.3.right" timestamp="1581514794366">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1899" height="356" key="GridCell.Tab.3.right" timestamp="1585838786820">
+      <screen x="1280" y="-393" width="1920" height="1057" />
     </state>
+    <state width="1899" height="356" key="GridCell.Tab.3.right/0.23.1280.777/1280.-393.1920.1057@1280.-393.1920.1057" timestamp="1585838786820" />
     <state width="1259" height="245" key="GridCell.Tab.3.right/0.23.1280.777@0.23.1280.777" timestamp="1581514794366" />
     <state x="141" y="50" key="SettingsEditor" timestamp="1581344130414">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="141" y="50" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1581344130414" />
-    <state x="298" y="47" width="837" height="729" key="find.popup" timestamp="1581340330026">
+    <state x="423" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585575557474">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
+    <state x="423" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.777/1280.-393.1920.1057@0.23.1280.777" timestamp="1585575557474" />
+    <state x="1727" y="-360" width="1256" height="992" key="find.popup" timestamp="1585732877253">
+      <screen x="1280" y="-393" width="1920" height="1057" />
+    </state>
+    <state x="1727" y="-360" width="1256" height="992" key="find.popup/0.23.1280.777/1280.-393.1920.1057@1280.-393.1920.1057" timestamp="1585732877253" />
     <state x="298" y="47" width="837" height="729" key="find.popup/0.23.1280.777@0.23.1280.777" timestamp="1581340330026" />
+    <state x="1905" y="-214" width="670" height="676" key="search.everywhere.popup" timestamp="1585761747747">
+      <screen x="1280" y="-393" width="1920" height="1057" />
+    </state>
+    <state x="1905" y="-214" width="670" height="676" key="search.everywhere.popup/0.23.1280.777/1280.-393.1920.1057@1280.-393.1920.1057" timestamp="1585761747747" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/thinktank/getPredictions.js</url>
+          <line>40</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

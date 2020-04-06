@@ -1,5 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+/**
+ * AWS setting to connect to dynamo db. Export documentClient
+ */
 var AWS = require("aws-sdk");
 AWS.config.update({
     region: "us-east-1",

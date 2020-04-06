@@ -1,4 +1,8 @@
 "use strict";
+/**
+ * Connect to Crypto-compare API and pull the latest transactions
+ * For Bitcoin, Litecoin, Ethereum, Monero, and Tron
+ */
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -41,6 +45,7 @@ var axios = require('axios'); //http
 var dotenv = require('dotenv'); //variable environments
 //Copy variables in file into environment variables
 dotenv.config();
+// list of currency and their name in the API
 var coins = {
     bitcoin: "BTC",
     litecoin: "LTC",
@@ -48,22 +53,26 @@ var coins = {
     monero: "XMR",
     tron: "TRX"
 };
+// In case I wanted to pull different prices
 var currencies = {
     dollar: "USD"
 };
-var historicalURL = 'https://min-api.cryptocompare.com/data/v2/histominute';
-var APIKey = '&api_key=' + process.env.CRYPTO_COMPARE_API_KEY;
-var coinUrl = function (chosenCoin) { return "?fsym=" + chosenCoin; };
-var currencyUrl = function (chosenCurrency) { return '&tsym=' + chosenCurrency; };
-var limitUrl = function (limit) { return '&limit=' + limit; };
-var getPricesPerMinute = function (crypto, curr, limit) { return __awaiter(void 0, void 0, void 0, function () {
-    var url;
-    return __generator(this, function (_a) {
-        url = historicalURL + coinUrl(crypto) + currencyUrl(curr) + limitUrl(limit) + APIKey;
-        return [2 /*return*/, axios.get(url)];
+// API key for the CryptoCompare API.
+var API_BASE_URL = 'https://min-api.cryptocompare.com/data/v2';
+var API_KEY = '&api_key=' + process.env.CRYPTO_COMPARE_API_KEY;
+// get prices per minutes for the last 200 minutes
+var getPricesPerMinute = function (coin, curr, limit) {
+    if (limit === void 0) { limit = 200; }
+    return __awaiter(void 0, void 0, void 0, function () {
+        var url;
+        return __generator(this, function (_a) {
+            url = API_BASE_URL + "/histominute?fsym=" + coin + "&tsym=" + curr + "&limit=" + limit + API_KEY;
+            return [2 /*return*/, axios.get(url)];
+        });
     });
-}); };
-var getPricesForAllCurrencies = function () { return __awaiter(void 0, void 0, void 0, function () {
+};
+// Get all the prices for all the currencies selected from the API CryptoCompare
+exports.getPricesForAllCurrencies = function () { return __awaiter(void 0, void 0, void 0, function () {
     var _a, _b, _i, coin, _c, _d, _e, currency, result, prices, listOfPrices, _f, listOfPrices_1, price, error_1;
     return __generator(this, function (_g) {
         switch (_g.label) {
@@ -87,7 +96,7 @@ var getPricesForAllCurrencies = function () { return __awaiter(void 0, void 0, v
                 _g.label = 3;
             case 3:
                 _g.trys.push([3, 11, , 12]);
-                return [4 /*yield*/, getPricesPerMinute(coins[coin], currencies[currency], "100")];
+                return [4 /*yield*/, getPricesPerMinute(coins[coin], currencies[currency])];
             case 4:
                 result = _g.sent();
                 prices = result["data"];
@@ -124,5 +133,4 @@ var getPricesForAllCurrencies = function () { return __awaiter(void 0, void 0, v
         }
     });
 }); };
-getPricesForAllCurrencies().then(function () { return console.log("Done."); });
 //# sourceMappingURL=crypto-compare-get-data.js.map
